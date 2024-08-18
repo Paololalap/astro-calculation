@@ -40,3 +40,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+.input-no-spinner::-webkit-inner-spin-button, 
+.input-no-spinner::-webkit-outer-spin-button { 
+  @apply appearance-none;
+  margin: 0;
+}
