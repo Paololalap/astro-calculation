@@ -1,16 +1,15 @@
 ---
-
+import { ProfileForm } from "@/components/Form";
+import Layout from "@/layouts/layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Home">
+  <section class="flex flex-col gap-5">
+    <h1
+      class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center"
+    >
+      Calculation
+    </h1>
+     <ProfileForm client:load/>
+  </section>
+</Layout>
